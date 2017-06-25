@@ -6,13 +6,14 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
 #============================================================
-#= snapshot.sh v0.2 created by mrgr                         =
+#= snapshot.sh v0.2 created by mrgr     
+#= modified by gregorst
 #= Please consider voting for delegate mrgr                 =
 #============================================================
 echo " "
 
-if [ ! -f ../shift/app.js ]; then
-  echo "Error: No shift installation detected. Exiting."
+if [ ! -f ../lisk-main/app.js ]; then
+  echo "Error: No lisk installation detected. Exiting."
   exit 1
 fi
 
@@ -21,7 +22,7 @@ if [ "\$USER" == "root" ]; then
   exit 1
 fi
 
-SHIFT_CONFIG=~/shift/config.json
+SHIFT_CONFIG=~/lisk-main/config.json
 DB_NAME="$(grep "database" $SHIFT_CONFIG | cut -f 4 -d '"')"
 DB_USER="$(grep "user" $SHIFT_CONFIG | cut -f 4 -d '"')"
 DB_PASS="$(grep "password" $SHIFT_CONFIG | cut -f 4 -d '"' | head -1)"
