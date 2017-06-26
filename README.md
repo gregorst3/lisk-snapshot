@@ -17,7 +17,7 @@ sudo visudo
 Execute the following commands
 ```
 cd ~/
-git clonehttps://github.com/gregory0219998/lisk-snapshot
+git clone https://github.com/gregory0219998/lisk-snapshot
 cd lisk-snapshot/
 bash lisk-snapshot.sh help
 ```
