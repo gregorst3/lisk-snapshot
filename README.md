@@ -19,8 +19,7 @@ Execute the following commands
 cd ~/
 git clone https://github.com/gregory0219998/lisk-snapshot
 sudo visudo
-#add this under #includedir /etc/sudoers.d
-USERNAME ALL=(ALL) NOPASSWD: ALL
+USERNAME ALL=(ALL) NOPASSWD: ALL (add this under #includedir /etc/sudoers.d)
 cd lisk-snapshot/
 bash lisk-snapshot.sh help
 ```
